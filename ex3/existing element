@@ -1,0 +1,27 @@
+d1 = {}
+n1 = int(input("How many items in Dictionary 1? "))
+for i in range(n1):
+    key = input("Enter key: ")
+    value = input("Enter value: ")
+    d1[key] = value
+d2 = {}
+n2 = int(input("How many items in Dictionary 2? "))
+for i in range(n2):
+    key = input("Enter key: ")
+    value = input("Enter value: ")
+    d2[key] = value
+d3 = {}
+for k in d1:
+    d3[k] = d1[k]
+for k in d2:
+    d3[k] = d2[k]
+print("Dictionary 1:", d1)
+print("Dictionary 2:", d2)
+print("Concatenated Dictionary (Dictionary 3):", d3)
+def check_key(dictionary, key):
+    if key in dictionary:
+        print("Key exists in the dictionary")
+    else:
+        print("Key does not exist in the dictionary")
+search_key = input("Enter a key to check: ")
+check_key(d3, search_key)
