@@ -1,0 +1,4 @@
+mixed_tuple=(1,"python", 3.14, True)
+print "The mixed data type tuple is:", mixed_tuple
+tuple_length = len(mixed_tuple)
+print "The length of the tuple is:", tuple_length
