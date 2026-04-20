@@ -1,0 +1,12 @@
+import math
+sum=0
+num=int(input("enter the number"))
+temp=num
+while temp != 0:
+   digit=temp%10
+   sum=sum+(digit*digit*digit)
+   temp=temp/10
+if(sum == num):
+   print"the value is amstrong"
+else:
+   print"the value is not amstrong"
