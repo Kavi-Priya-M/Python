@@ -1,0 +1,20 @@
+n=int(input("Enter number of elements: "))
+lst = []
+print("Enter list elements:")
+for i in range(n):
+    lst.append(int(input()))
+even_list=[]
+even = []
+odd = []
+for x in lst:
+    if x % 2 == 0:
+        even_list.append(x)
+        even.append(x)
+    else:
+        odd.append(x)
+final_list = even + odd
+print"Input list:", lst
+print"List with only even numbers:", even_list
+print"Final list (odd numbers moved to end):", final_list
+
+
