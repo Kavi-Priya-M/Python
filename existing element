@@ -1,0 +1,9 @@
+tup1=(1,2,3,4,5)
+print ("original tuple", tup1)
+n = int(input("enter the value: "))
+for i in tup1:
+    if i == n:
+        print("existing element")
+        break
+else:
+    print("not existing element")
