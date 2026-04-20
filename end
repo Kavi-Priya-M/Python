@@ -1,0 +1,10 @@
+elements =[]
+print"enter values (type 'end' to stop):"
+while True:
+    val = raw_input(" ")
+
+    if val.lower() == "end":
+        break
+    elements.append(val)
+original_tuple = tuple(elements)
+print "Original Tuple:", original_tuple
