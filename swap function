@@ -1,0 +1,10 @@
+def swap_numbers(a, b):
+    a = a + b
+    b = a - b
+    a = a - b
+    return a, b
+a = int(input("Enter the value for a: "))
+b = int(input("Enter the value for b: "))
+print"The values before swapping a:", a, "b:", b
+a, b = swap_numbers(a, b)
+print"The values after swapping a:", a, "b:", b
