@@ -1,0 +1,18 @@
+my_list = [10, 21, 32, 43, 54, 65, 76, 87, 98]
+print "Original List:", my_list
+index_input = input("Enter a starting index: ")
+start_index = int(index_input)
+sliced_part = my_list[start_index:]
+print "Sliced portion:", sliced_part
+
+evens = []
+odds = []
+
+for x in sliced_part:
+    if x % 2 == 0:
+        evens.append(x)
+    else:
+        odds.append(x)
+
+final_list = evens + odds
+print "Final result:", final_list
