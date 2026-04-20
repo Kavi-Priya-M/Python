@@ -1,0 +1,26 @@
+import sys
+d1 = {}
+n1 = int(input("Enter number of items in Dictionary 1: "))
+for i in range(n1):
+    key = input("Enter key: ")
+    value = input("Enter value: ")
+    d1[key] = value
+d2 = {}
+n2 = int(input("\nEnter number of items in Dictionary 2: "))
+for i in range(n2):
+    key = input("Enter key: ")
+    value = input("Enter value: ")
+    d2[key] = value
+
+print("\nDictionary 1:", d1)
+print("Dictionary 2:", d2)
+merge_unpack = {**d1, **d2}
+print("Merged using dictionary unpacking:", merge_unpack)
+merge_update = d1.copy()
+merge_update.update(d2)
+print("Merged using update() function:", merge_update)
+merge_loop = d1.copy()
+for key in d2:
+    merge_loop[key] = d2[key]
+
+print("Merged using for loop:", merge_loop)
