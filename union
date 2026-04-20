@@ -1,0 +1,21 @@
+x=raw_input("Enter comma seperated values:")
+set1=set()
+set1=set(x.split(','))
+y=raw_input("Enter comma seperated values:")
+set2=set()
+set2=set(y.split(','))
+inter=set()
+inter=set1.intersection(set2)
+print "Intersection:",inter
+uni=set()
+uni=set1.union(set2)
+print "Union:",uni
+differ=set()
+differ=set1.difference(set2)
+print "Difference:",differ
+[23bee009@mepcolinux ~]$python 8union.py
+Enter comma seperated values:1,2,3,4
+Enter comma seperated values:1,2
+Intersection: set(['1', '2'])
+Union: set(['1', '3', '2', '4'])
+Difference: set(['3', '4'])
