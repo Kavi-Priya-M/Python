@@ -1,0 +1,19 @@
+class circle(object):
+  def __init__(self,r):
+       self.radius = r
+  def perimeter(self):
+      return self.radius*2*22/7
+  def area(self):
+      return self.radius*self.radius*22/7
+r =float(raw_input("enter the radius"))
+a = circle(r)
+print "the perimeter of circle",a.perimeter()
+print "the area of circle",a.area()
+[23bee009@mepcolinux ~]$python circle10.py
+enter the radius2
+the perimeter of circle 12.5714285714
+the area of circle 12.5714285714
+[23bee009@mepcolinux ~]$python circle10.py
+enter the radius4
+the perimeter of circle 25.1428571429
+the area of circle 50.2857142857
