@@ -1,0 +1,24 @@
+d = {}
+n = int(input("How many items? "))
+for i in range(n):
+    k = input("Enter key: ")
+    v = int(input("Enter value: "))
+    d[k] = v
+print("Original:", d)
+items = list(d.items())
+for i in range(len(items)):
+    for j in range(i + 1, len(items)):
+        if items[i][1] > items[j][1]:
+            items[i], items[j] = items[j], items[i]
+d = dict(items)
+print("Ascending:", d)
+new_key = input("Enter new key: ")
+new_value = int(input("Enter new value: "))
+d[new_key] = new_value
+items = list(d.items())
+for i in range(len(items)):
+    for j in range(i + 1, len(items)):
+        if items[i][1] < items[j][1]:
+            items[i], items[j] = items[j], items[i]
+d = dict(items)
+print("Descending:", d)
