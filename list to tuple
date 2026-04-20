@@ -1,0 +1,4 @@
+list=[1,2,3,4]
+print list
+tup1=tuple(list)
+print"convert list into tuple",tup1
