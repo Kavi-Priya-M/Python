@@ -1,0 +1,4 @@
+tuple_of_tuples = ((1, 2), (3, 4), (5, 6))
+flattened = sum(tuple_of_tuples, ())
+print "Original tuple of tuples:", tuple_of_tuples
+print "Flattened tuple:", flattened
