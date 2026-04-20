@@ -1,0 +1,36 @@
+def is_empty(lst):
+    if len(lst) == 0:
+        return True
+    else:
+        return False
+
+def has_common_member(list1, list2):
+    for x in list1:
+        if x in list2:
+            return True
+    return False
+def remove_element(lst, element):
+    if element in lst:
+        lst.remove(element)
+    return lst
+n1 = int(input("Enter number of elements in list 1: "))
+list1 = []
+for i in range(n1):
+    list1.append(int(input()))
+n2 = int(input("Enter number of elements in list 2: "))
+list2 = []
+for i in range(n2):
+    list2.append(int(input()))
+print"List 1 empty?", is_empty(list1)
+print"List 2 empty?", is_empty(list2)
+print" any common member?", has_common_member(list1, list2)
+elem = int(input("Enter element to remove from list 1: "))
+list1 = remove_element(list1, elem)
+print"List 1 after removal:", list1
+result = []
+for x in list1:
+    for y in list2:
+        if x + y > 40:
+            result.append((x, y))
+
+print"Pairs whose sum is greater than 40:", result
