@@ -1,0 +1,11 @@
+numbers = [10, 25, 30, 45, 50]
+print "Original List:", numbers
+for i in range(len(numbers)):
+    numbers[i] = numbers[i] + 5
+
+print "Modified List (after adding 5):", numbers
+greatest = max(numbers)
+least = min(numbers)
+
+print "Greatest value:", greatest
+print "Least value:", least
